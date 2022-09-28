@@ -71,7 +71,7 @@ window.addEventListener('load', function() {
           console.log('Success:', data.profile_photo.url);
           thumbnail.src = data.profile_photo.url;
           jQuery("#profile-photo").val('')
-          //Wized.request.load("Get User");
+          Wized.request.load("Get User");
         })
         .catch((error) => {
           console.error('Error:', error);

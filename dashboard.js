@@ -66,7 +66,7 @@ jQuery(personalInfoSaveButton).click(function(){
   updatePersonal(id, fnameField, lnameField, descriptionField);
   personalInfoDiv.show();
   personalInfoEditDiv.hide();
-  Wized.request.load("Get User");
+  // Wized.request.load("Get User");
   jQuery("#first-name").text(fnameField);      
   jQuery("#last-name").text(lnameField);
   jQuery("#description").text(descriptionField);
@@ -88,7 +88,7 @@ function updatePhoto(userID) {
     console.log('Success:', data.profile_photo.url);
     thumbnail.src = data.profile_photo.url;
     jQuery("#profile-photo").val('')
-    Wized.request.load("Get User");
+    // Wized.request.load("Get User");
   })
   .catch((error) => {
     console.error('Error:', error);

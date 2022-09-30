@@ -14,7 +14,7 @@ let id, slug, fname, lname, description, specialties, modalities;
 window.onload = function() {
   if(localStorage.authToken == null){
     console.log('not authorized');
-    //location.href="/sign-in";
+    location.href="/sign-in";
   } else {
     getUserID().then(response => loadUser(response));
   }

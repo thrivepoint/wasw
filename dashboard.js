@@ -21,6 +21,8 @@ window.onload = function() {
   }
 }
 
+console.log('test');
+
 function loadUser(id) {
   fetch("https://x8ki-letl-twmt.n7.xano.io/api:Jw42rGBY/user/"+id, {
     method: "GET",

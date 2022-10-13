@@ -8,6 +8,10 @@
   color: #000000;
 }
 
+h1 {
+  color:  red !important;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
   -webkit-border-radius: 20px;
   width: 10px;

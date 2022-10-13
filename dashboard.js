@@ -31,7 +31,7 @@ function loadUser(id) {
   })
   .then(response => response.json())
   .then(data => {
-
+console.log(data)
 // User data 
 id = data.user.id;
 slug = data.user.slug;
